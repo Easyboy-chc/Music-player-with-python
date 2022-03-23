@@ -32,20 +32,16 @@ while True:
     if event == 'Play':
         song = f"{values['-MUSIC-']}"
         song1 = song
-        print(len(song))
         mixer.music.load(song)
         mixer.music.play()
         volume = values['volume']
-        print(volume)
-        print(values['-BROWSE-'])
+      
+      
     if event == 'Pause':
-        print('pausing the music')
         mixer.music.pause()
     if event == 'Resume':
-        print('unpausing the music')
         mixer.music.unpause()
     if event == 'Stop':
-        print('you stoped mixer bye')
         mixer.music.stop()
         
 window.close()
