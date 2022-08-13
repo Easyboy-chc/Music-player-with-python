@@ -45,3 +45,4 @@ while True:
         mixer.music.stop()
         
 window.close()
+#window.close
